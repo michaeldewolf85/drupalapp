@@ -67,5 +67,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get install -y default-jdk
+    wget https://s3.amazonaws.com/cloud.teamdev.com/downloads/jxbrowser/jxbrowser-5.1-cross-desktop-win_mac_linux.zip
   SHELL
 end
